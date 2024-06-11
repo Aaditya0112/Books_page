@@ -6,32 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src = "script.js"></script>
-    <script>
-        function filter() {
-            var checkboxes = document.getElementsByName("check")
-            var checked = [];
 
-            for (var i = 0; i < checkboxes.length; i++) {
-                if (checkboxes[i].checked) {
-                    checked.push(checkboxes[i].id);
-                }
-            }
-            var cards = document.getElementsByClassName('card');
-            for (var i = 0; i < cards.length; i++) {
-                if (checked.length === 0) {
-                    cards[i].style.display = 'flex';
-                }
-                else {
-                    cards[i].style.display = 'none';
-                    for (var j = 0; j < checked.length; j++) {
-                        if (cards[i].querySelector('.sub').innerHTML === checked[j]) {
-                            cards[i].style.display = 'flex';
-                        }
-                    }
-                }
-            }
-        }
-    </script>
 </head>
 
 <body>
