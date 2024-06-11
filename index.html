@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src = "script.js"></script>
+    <script>
+        function filter() {
+            var checkboxes = document.getElementsByName("check")
+            var checked = [];
+
+            for (var i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].checked) {
+                    checked.push(checkboxes[i].id);
+                }
+            }
+            var cards = document.getElementsByClassName('card');
+            for (var i = 0; i < cards.length; i++) {
+                if (checked.length === 0) {
+                    cards[i].style.display = 'flex';
+                }
+                else {
+                    cards[i].style.display = 'none';
+                    for (var j = 0; j < checked.length; j++) {
+                        if (cards[i].querySelector('.sub').innerHTML === checked[j]) {
+                            cards[i].style.display = 'flex';
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="header"> -->
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <!-- </div> -->
+
+        <div class="content">
+
+            <div class="filter">
+                <h3>Filter</h3>
+                <div class="filter-option">
+                    <input type="checkbox" name="check" id="Physics" oninput="filter()"><span>Physics</span>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" name="check" id="Chemistry" oninput="filter()"><span>Chemistry</span>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" name="check" id="Mathematics" oninput="filter()"><span>Mathematics</span>
+                </div>
+
+
+            </div>
+            <div class="card_box">
+                <div class="card">
+                    <img src="images/hcv.webp" alt="book's image">
+                    <div class="card-title">
+                        <h3>Book Name</h3>
+                    </div>
+                    <div class="card-info">
+                        <div class="basic">
+                            <div class="authName">
+                                <h4>Author</h4>
+                            </div>
+                            <div class="sub">Physics</div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laborum ex unde! Tempore illum
+                            ex dicta, perferendis incidunt ipsa deleniti quo, nobis dolorem quas ratione inventore
+                            officia corrupti deserunt vero.</p>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="images/hcv.webp" alt="book's image">
+                    <div class="card-title">
+                        <h3>Book Name</h3>
+                    </div>
+                    <div class="card-info">
+                        <div class="basic">
+                            <div class="authName">
+                                <h4>Author</h4>
+                            </div>
+                            <div class="sub">Physics</div>
+                        </div>
+                        <p>Book's Description</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/hcv.webp" alt="book's image">
+                    <div class="card-title">
+                        <h3>Book Name</h3>
+                    </div>
+                    <div class="card-info">
+                        <div class="basic">
+                            <div class="authName">
+                                <h4>Author</h4>
+                            </div>
+                            <div class="sub">Chemistry</div>
+                        </div>
+                        <p>Book's Description</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/hcv.webp" alt="book's image">
+                    <div class="card-title">
+                        <h3>Book Name</h3>
+                    </div>
+                    <div class="card-info">
+                        <div class="basic">
+                            <div class="authName">
+                                <h4>Author</h4>
+                            </div>
+                            <div class="sub">Physics</div>
+                        </div>
+                        <p>Book's Description</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/hcv.webp" alt="book's image">
+                    <div class="card-title">
+                        <h3>Book Name</h3>
+                    </div>
+                    <div class="card-info">
+                        <div class="basic">
+                            <div class="authName">
+                                <h4>Author</h4>
+                            </div>
+                            <div class="sub">Physics</div>
+                        </div>
+                        <p>Book's Description</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/hcv.webp" alt="book's image">
+                    <div class="card-title">
+                        <h3>Book Name</h3>
+                    </div>
+                    <div class="card-info">
+                        <div class="basic">
+                            <div class="authName">
+                                <h4>Author</h4>
+                            </div>
+                            <div class="sub">Mathematics</div>
+                        </div>
+                        <p>Book's Description</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/hcv.webp" alt="book's image">
+                    <div class="card-title">
+                        <h3>Book Name</h3>
+                    </div>
+                    <div class="card-info">
+                        <div class="basic">
+                            <div class="authName">
+                                <h4>Author</h4>
+                            </div>
+                            <div class="sub">Physics</div>
+                        </div>
+                        <p>Book's Description</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/hcv.webp" alt="book's image">
+                    <div class="card-title">
+                        <h3>Book Name</h3>
+                    </div>
+                    <div class="card-info">
+                        <div class="basic">
+                            <div class="authName">
+                                <h4>Author</h4>
+                            </div>
+                            <div class="sub">Physics</div>
+                        </div>
+                        <p>Book's Description</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/hcv.webp" alt="book's image">
+                    <div class="card-title">
+                        <h3>Book Name</h3>
+                    </div>
+                    <div class="card-info">
+                        <div class="basic">
+                            <div class="authName">
+                                <h4>Author</h4>
+                            </div>
+                            <div class="sub">Physics</div>
+                        </div>
+                        <p>Book's Description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
