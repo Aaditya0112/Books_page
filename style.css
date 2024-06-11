@@ -43,7 +43,7 @@ body {
 }
 
 .filter{
-    background-color: rgb(233, 59, 128);
+    background-color: rgb(41 175 239);
     min-height: 30px;
     width: 100%;
     display : flex;
@@ -51,7 +51,7 @@ body {
     align-items: center;
     max-width: 80%;
     border-radius: 15px;
-    color: #4b4f4d;
+    color: #000;
     
 }
 .filter input[type = "checkbox"]{
