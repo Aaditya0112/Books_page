@@ -21,7 +21,7 @@ body {
 .navbar{
     display:flex;
     flex-direction: column;
-    background-color: black;
+    background-color: #4b4eb7;
     position:static;
     width: 100%;
     position: fixed;
@@ -109,7 +109,7 @@ body {
         align-items:center;
     }
     .content{
-        margin-top: 50px;
+        margin-top: 40px;
         display: flex;
         align-items: center;
         background-color: #f5f5f0;
