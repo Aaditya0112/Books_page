@@ -2,12 +2,7 @@
 // const C = document.getElementById('Chemistry');
 // const M = document.getElementById('Mathematics');
 
-document.querySelectorAll(".card").forEach((item) => {
-    item.addEventListener('click', () => {
-        item.setAttribute("style", "box-shadow : 1px 1px 10px 1px black");
-    }
-    )
-})
+
 function filter() {
     var checkboxes = document.getElementsByName("check")
     var checked = [];
@@ -32,3 +27,11 @@ function filter() {
         }
     }
 }
+
+
+ch = document.getElementsByName("check")
+
+
+ch.forEach((item) => {
+    item.addEventListener('input', filter)
+})
