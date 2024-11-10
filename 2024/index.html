@@ -11,41 +11,9 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-
+    
     <script>
-        function divCreator() {
-
-            // const Speakers = [
-            //     {
-            //         id: 1,
-            //         title: " Prof. Premlata Jena",
-            //         description: "IIT Roorkee",
-            //         bio: "Prof. Premalata Jena (Senior Member, IEEE) received the B.Tech. degree in electrical engineering from Utkal University, Odisha, India, in 2001, and the M.Tech. and Ph.D. degrees in power system engineering from the Department of Electrical Engineering, Indian Institute of Technology (IIT) Kharagpur, Kharagpur, India, in 2006 and 2011, respectively.,Since 2012, she has been an Assistant Professor with the Department of Electrical Engineering, IIT Roorkee, Roorkee, India, where she is currently an Associate Professor with the Department of Electrical Engineering. Her research interests include power system protection, microgrid protection, and issues due to the integration of renewables with the existing power grid.,Dr. Jena was the recipient of the SERB-POWER Fellowship-2022 from SERB, New Delhi, the Women Excellence Award-2017 from DST, New Delhi, the Young Engineer Award, Indian National Academy of Engineering, and the POSOCO Power System Award, Power Grid Corporation of India Ltd., India, in 2013.",
-
-            //     },
-
-            //     {
-            //         id: 2,
-            //         title: 'Prof. S. N. Singh',
-            //         description: 'Director, ABV-IIITM Gwalior',
-            //         // bio : "Prof S. N. Singh obtained his M. Tech. and Ph. D. in Electrical Engineering from Indian Institute of Technology Kanpur, in 1989 and 1995. Presently, Prof Singh is Director, Atal Bihari Bajpayee- Indian Institute of Information Technology and Management Gwalior (MP), India (on leave from Professor (HAG), Department of Electrical Engineering, Indian Institute of Technology Kanpur, India). Before joining IIT Kanpur as Associate Professor, Dr Singh worked with UP State Electricity Board as Assistant Engineer from 1988 to 1996, with Roorkee University (now IIT Roorkee) as Assistant Professor from 1996 to 2000 and with Asian Institute of Technology, Bangkok, Thailand as Assistant Professor from 2001 to 2002. He was ViceChancellor of Madan Mohan Malviya University of Technology Gorakhpur during April 2017 to July 2020. Dr Singh received several awards including Young Engineer Award 2000 of Indian National Academy of Engineering (INAE), Khosla Research Award of IIT Roorkee, and Young Engineer Award of CBIP New Delhi (India), 1996. Prof Singh is receipt of Humboldt Fellowship of Germany (2005, 2007) and Ottomonsted Fellowship of Denmark (2009-10). Prof Singh became first Asian to receive 2013 IEEE Educational Activity Board Meritorious Achievement Award in Continuing Education. He is also recipients of INAE Outstanding Teacher Award 2016 and IEEE R10 region (Asia-Pacific) Outstanding Volunteer Award 2016. Dr Singh is appointed as <span class = 'more hidden'>IEEE Distinguish Lecturer of Power & Energy Society from 2019 and Industry application Society for 2019-2021. He is also recipient of NPSC 2020 Academic Excellence Award and 2021 IEEE Industry Application Society (IAS) Outstanding Educator/ Mentor Award. His research interests include power system restructuring, FACTS, power system optimization & control, security analysis, wind power, etc. Prof Singh has published more than 500 papers (h-index=57, Citation=12k+) in International/ national journals/conferences and supervised 40 PhD (8 PhD under progress). He has also written 30 book chapters, 8 Edited books and 2 text-books one on Electric Power Generation, Transmission and Distribution and second is Basic Electrical Engineering, published by PHI, India. Prof Singh has completed three dozen of technical projects in India and abroad. His two NPTEL (YouTube) video lectures on HVDC Transmission and Power System Operation & Control are very popular. Prof Singh was Chairman, IEEE UP Section for 2013 & 2014, IEEE R10 (Asia-Pacific) Conference & Technical Seminar Coordinator 2015-18 and R10 Vice-Chair, Technical Activities (2019-2020). Presently Prof Singh is Immediate Past Chairman of IEEE, India Council. Dr Singh is Fellows of IEEE (USA), IET (UK), INAE, IE(I), IETE, AvH</span><span class='see-more text-red-500 text-lg inline' onclick='if(document.querySelector(`.see-more`).innerHTML==`...See More`){document.querySelector(`.more`).style.display = `inline`;document.querySelector(`.see-more`).innerHTML = `See Less`;}else{document.querySelector(`.more`).style.display = `none`;document.querySelector(`.see-more`).innerHTML = `...See More`}}}>...See More</span>",
-            //         bio: "Prof S. N. Singh obtained his M. Tech. and Ph. D. in Electrical Engineering from Indian Institute of Technology Kanpur, in 1989 and 1995. Presently, Prof Singh is Director, Atal Bihari Bajpayee- Indian Institute of Information Technology and Management Gwalior (MP), India (on leave from Professor (HAG), Department of Electrical Engineering, Indian Institute of Technology Kanpur, India). Before joining IIT Kanpur as Associate Professor, Dr Singh worked with UP State Electricity Board as Assistant Engineer from 1988 to 1996, with Roorkee University (now IIT Roorkee) as Assistant Professor from 1996 to 2000 and with Asian Institute of Technology, Bangkok, Thailand as Assistant Professor from 2001 to 2002. He was ViceChancellor of Madan Mohan Malviya University of Technology Gorakhpur during April 2017 to July 2020. Dr Singh received several awards including Young Engineer Award 2000 of Indian National Academy of Engineering (INAE), Khosla Research Award of IIT Roorkee, and Young Engineer Award of CBIP New Delhi (India), 1996. Prof Singh is receipt of Humboldt Fellowship of Germany (2005, 2007) and Ottomonsted Fellowship of Denmark (2009-10). Prof Singh became first Asian to receive 2013 IEEE Educational Activity Board Meritorious Achievement Award in Continuing Education. He is also recipients of INAE Outstanding Teacher Award 2016 and IEEE R10 region (Asia-Pacific) Outstanding Volunteer Award 2016. Dr Singh is appointed as IEEE Distinguish Lecturer of Power & Energy Society from 2019 and Industry application Society for 2019-2021. He is also recipient of NPSC 2020 Academic Excellence Award and 2021 IEEE Industry Application Society (IAS) Outstanding Educator/ Mentor Award. His research interests include power system restructuring, FACTS, power system optimization & control, security analysis, wind power, etc. Prof Singh has published more than 500 papers (h-index=57, Citation=12k+) in International/ national journals/conferences and supervised 40 PhD (8 PhD under progress). He has also written 30 book chapters, 8 Edited books and 2 text-books one on Electric Power Generation, Transmission and Distribution and second is Basic Electrical Engineering, published by PHI, India. Prof Singh has completed three dozen of technical projects in India and abroad. His two NPTEL (YouTube) video lectures on HVDC Transmission and Power System Operation & Control are very popular. Prof Singh was Chairman, IEEE UP Section for 2013 & 2014, IEEE R10 (Asia-Pacific) Conference & Technical Seminar Coordinator 2015-18 and R10 Vice-Chair, Technical Activities (2019-2020). Presently Prof Singh is Immediate Past Chairman of IEEE, India Council. Dr Singh is Fellows of IEEE (USA), IET (UK), INAE, IE(I), IETE, AvH.",
-
-            //     },
-            //     {
-            //         id: 3,
-            //         title: 'Prof. Prabodh Bajpai',
-            //         description: 'IIT Kanpur',
-            //         bio: "Prof. Prabodh Bajpai (Senior Member, IEEE) received the Ph.D. degree in electrical engineering from Indian Institute of Technology (IIT) Kanpur, Kanpur, India, in 2008. He is currently an  Professor with Department of Sustainable Energy Engineering, Indian Institute of Technology Kanpur. His research interests include power system restructuring, renewable energy systems, and power system optimization. ",
-
-            //     }]
-            return (
-                <>
-                    <h1>Speakers</h1>
-
-                </>
-            )
-        }
+        
     </script>
 
 
@@ -54,7 +22,6 @@
 <body>
 
     <div class="container">
-        <!-- <div class="header"> -->
         <div class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -62,168 +29,17 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-        <!-- </div> -->
 
         <div class="content">
 
+
             <div class="filter">
-                <h3 onclick="divCreator()">Filter</h3>
-                <div class="filter-option">
-                    <input type="checkbox" name="check" id="Physics"><span>Physics</span>
-                </div>
-                <div class="filter-option">
-                    <input type="checkbox" name="check" id="Chemistry"><span>Chemistry</span>
-                </div>
-                <div class="filter-option">
-                    <input type="checkbox" name="check" id="Mathematics"><span>Mathematics</span>
-                </div>
-
-
             </div>
 
             <div class="card_box">
-                <div class="card">
-                    <img src="images/hcv.webp" alt="book's image">
-                    <div class="card-title">
-                        <h3>Book Name</h3>
-                    </div>
-                    <div class="card-info">
-                        <div class="basic">
-                            <div class="authName">
-                                <h4>Author</h4>
-                            </div>
-                            <div class="sub">Physics</div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laborum ex unde! Tempore illum
-                            ex dicta, perferendis incidunt ipsa deleniti quo, nobis dolorem quas ratione inventore
-                            officia corrupti deserunt vero.</p>
-                    </div>
-
-                </div>
-                <div class="card">
-                    <img src="images/hcv.webp" alt="book's image">
-                    <div class="card-title">
-                        <h3>Book Name</h3>
-                    </div>
-                    <div class="card-info">
-                        <div class="basic">
-                            <div class="authName">
-                                <h4>Author</h4>
-                            </div>
-                            <div class="sub">Physics</div>
-                        </div>
-                        <p>Book's Description</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/hcv.webp" alt="book's image">
-                    <div class="card-title">
-                        <h3>Book Name</h3>
-                    </div>
-                    <div class="card-info">
-                        <div class="basic">
-                            <div class="authName">
-                                <h4>Author</h4>
-                            </div>
-                            <div class="sub">Chemistry</div>
-                        </div>
-                        <p>Book's Description</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/hcv.webp" alt="book's image">
-                    <div class="card-title">
-                        <h3>Book Name</h3>
-                    </div>
-                    <div class="card-info">
-                        <div class="basic">
-                            <div class="authName">
-                                <h4>Author</h4>
-                            </div>
-                            <div class="sub">Physics</div>
-                        </div>
-                        <p>Book's Description</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/hcv.webp" alt="book's image">
-                    <div class="card-title">
-                        <h3>Book Name</h3>
-                    </div>
-                    <div class="card-info">
-                        <div class="basic">
-                            <div class="authName">
-                                <h4>Author</h4>
-                            </div>
-                            <div class="sub">Chemistry</div>
-                        </div>
-                        <p>Book's Description</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/hcv.webp" alt="book's image">
-                    <div class="card-title">
-                        <h3>Book Name</h3>
-                    </div>
-                    <div class="card-info">
-                        <div class="basic">
-                            <div class="authName">
-                                <h4>Author</h4>
-                            </div>
-                            <div class="sub">Mathematics</div>
-                        </div>
-                        <p>Book's Description</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/hcv.webp" alt="book's image">
-                    <div class="card-title">
-                        <h3>Book Name</h3>
-                    </div>
-                    <div class="card-info">
-                        <div class="basic">
-                            <div class="authName">
-                                <h4>Author</h4>
-                            </div>
-                            <div class="sub">Physics</div>
-                        </div>
-                        <p>Book's Description</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/hcv.webp" alt="book's image">
-                    <div class="card-title">
-                        <h3>Book Name</h3>
-                    </div>
-                    <div class="card-info">
-                        <div class="basic">
-                            <div class="authName">
-                                <h4>Author</h4>
-                            </div>
-                            <div class="sub">Physics</div>
-                        </div>
-                        <p>Book's Description</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/hcv.webp" alt="book's image">
-                    <div class="card-title">
-                        <h3>Book Name</h3>
-                    </div>
-                    <div class="card-info">
-                        <div class="basic">
-                            <div class="authName">
-                                <h4>Author</h4>
-                            </div>
-                            <div class="sub">Mathematics</div>
-                        </div>
-                        <p>Book's Description</p>
-                    </div>
-                </div>
             </div>
         </div>
-    </div>
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
 </body>
 
 </html>
